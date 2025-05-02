@@ -1,5 +1,5 @@
 import {Player} from './Player.js';
-import Montanha from './montanha.js';
+import Montanha from './Montanha.js';
 import Spritesheet from './Spritesheet.js';
 import Nuvem from './Nuvem.js';
 import Input from './Input.js';
