@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    place-content: center;
+    place-items: center;
+   background: linear-gradient(to bottom, #2da3d1, #ffffff); 
+}
+
+canvas {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+}
