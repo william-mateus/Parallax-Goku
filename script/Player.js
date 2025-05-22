@@ -20,12 +20,25 @@ export class Player {
         // movimentação
         if (Input.indoDireita()) {
             this.x += this.velocidade * deltaTime;
-        } else if (Input.indoEsquerda()) {
+            if (this.x > canvas.width + 334) {
+                this.x = 0;
+            }
+        }
+         else if (Input.indoEsquerda()) {
             this.x -= this.velocidade * deltaTime;
+            if (this.x < -334) {
+                this.x = canvas.width + 334;
+            }
         } else if (Input.indoCima()) {
             this.y -= this.velocidade * deltaTime;
+            if (this.y < 20) {
+                this.y =  20;
+            }
         } else if (Input.indoBaixo()) {
             this.y += this.velocidade * deltaTime;
+            if (this.y > canvas.height - 207) {
+                this.y = canvas.height - 207;
+            }
         }
 
     }
